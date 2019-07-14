@@ -1,0 +1,11 @@
+
+
+<div class="card" style="width: 18rem;" *ngFor="let furniture of furnitures">
+    <a routerLink="/detail/{{furniture.id}}">
+    <img class="card-img-top" [src]='furniture.img[0].url'>
+    <div class="card-body">
+      <h5 class="card-title">{{furniture.name}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{furniture.type}}</h6>
+    </div>
+  </a>
+  </div>

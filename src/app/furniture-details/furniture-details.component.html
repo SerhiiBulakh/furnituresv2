@@ -1,0 +1,23 @@
+
+
+<div class="card">
+    <div  class="card-img-top img-container">
+        <ngb-carousel>
+            <ng-template ngbSlide *ngFor="let image of items" class='img-group' >
+              <img [src]="image.url" class="img-item" >
+             
+            </ng-template>
+        </ngb-carousel>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title"><label >Название:</label>  {{furniture.name}}</h5>
+      <h5 class="card-title"><label >Тип:</label>  {{furniture.type}}</h5>
+      <h5 class="card-title"><label >Ширина:</label>  {{furniture.width}}</h5>
+      <h5 class="card-title"><label >Высота:</label>  {{furniture.height}}</h5>
+      <h5 class="card-title"><label >Цвет:</label>  {{furniture.color}}</h5>
+      <h5 class="card-title"><label >Цена:</label>  {{furniture.price}} грн.</h5>
+      
+    </div>
+   
+   
+  </div>
